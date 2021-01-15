@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>File System</title>
+  </head>
+  <body onload="updateUI()">
+    <div class="description">
+      <h1>Welcome</h1>
+      <p>to our file system</p>
+      <img src="./img/icon.jpg" />
+    </div>
+
+    <section id="list"></section>
+    <div id="free_space">
+      <p>In this workspace you can create, rename and delete your files.</p>
+      <p>
+        In order to create a file click on the free space below existing files.
+        To get rid of create menu click on the free space.
+      </p>
+      <p>
+        In order to rename or delete a file click on it and you will see theese
+        options. To get rid of theese options click on the file.
+      </p>
+      <p>Have a nice day!</p>
+    </div>
+
+    <button id="create" style="display: none">Create</button>
+    <div id="options" style="display: none">
+      <button id="rename">Rename</button>
+      <button id="delete">Delete</button>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

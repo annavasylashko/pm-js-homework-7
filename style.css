@@ -1,0 +1,139 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  color: rgb(54, 48, 61);
+  background-color: #383838;
+  min-width: 300px;
+}
+
+.description {
+  display: grid;
+  grid-template-areas:
+    "icon h1"
+    "icon p";
+  grid-template-columns: 80px;
+  padding-left: 1.7rem;
+}
+
+h1 {
+  grid-area: h1;
+  margin-bottom: 0;
+  color: #d9c6f1;
+}
+
+p {
+  grid-area: p;
+  margin: 0 auto 3rem 0.3rem;
+  color: #fff;
+}
+
+.description > img {
+  grid-area: icon;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-top: 21.5px;
+}
+
+#list {
+  margin-left: 1.7rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed rgba(142, 145, 163, 0.1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-self: center;
+  gap: 1rem;
+  width: 90%;
+}
+
+.file {
+  border: 1px solid rgb(142, 145, 163);
+  border-radius: 8px;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: rgb(244, 244, 248);
+}
+
+.file:hover {
+  cursor: pointer;
+  background-color: rgb(203, 203, 209);
+}
+
+#create {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgb(142, 145, 163);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  outline: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  color: rgb(48, 49, 54);
+}
+
+#create:hover {
+  cursor: pointer;
+  background-color: rgb(203, 203, 209);
+}
+
+#options {
+  position: relative;
+  border: 1px solid rgb(142, 145, 163);
+  border-radius: 8px;
+  width: 70px;
+  height: fit-content;
+  background-color: #fff;
+}
+
+#rename,
+#delete {
+  outline: none;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  color: rgb(48, 49, 54);
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+#rename,
+#delete:hover {
+  cursor: pointer;
+}
+
+#rename:hover {
+  border-radius: 8px 8px 0 0;
+  background-color: rgb(203, 203, 209);
+}
+
+#delete:hover {
+  border-radius: 0 0 8px 8px;
+  background-color: rgb(203, 203, 209);
+}
+
+#free_space {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 15px;
+}
+
+#free_space p {
+  margin-bottom: 0.5rem;
+  margin-left: 1.7rem;
+  width: 15rem;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+#free_space p:last-child {
+  font-size: 1rem;
+}
